@@ -9,3 +9,17 @@ $("#menu-toggle").click(function (e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
 });
+
+function openTab(evt, whichTab) {
+    var i, tabContent, tabLinks;
+    tabContent = document.getElementsByClassName("tabcontent");
+    for (i=0; i < tabContent.length; i++){
+        tabContent[i].style.display = "none";
+    }
+    tabLinks = document.getElementsByClassName("tabLinks");
+    for (i=0; i < tabLinks.length; i++){
+        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+    }
+    document.getElementById(whichTab).style.display = "block";
+    evt.currentTarget.className += " active";
+}
