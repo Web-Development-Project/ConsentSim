@@ -47,6 +47,14 @@
   box-sizing: border-box;
 }
 
+.header_mainpage {
+  background-image: url("cheers.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 60%;
+  margin:auto;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
