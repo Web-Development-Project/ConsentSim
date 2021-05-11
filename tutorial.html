@@ -17,14 +17,15 @@
             <div class="bg-light border-right" id="sidebar-wrapper">
                 <div class="sidebar-heading">Consent</div>
                 <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action bg-light" href="#!">What is consent</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="#!">Who can't give consent</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="#!">How does consent work</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="#!">How to ask for consent</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="#!">Some scenarios</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="#!">Next step</a>
+                    <button class="list-group-item list-group-item-action bg-light tabLinks" onclick="openTab(event, 'consent1')">What is consent</button>
+                    <button class="list-group-item list-group-item-action bg-light tabLinks" onclick="openTab(event, 'consent2')">Who can't give consent</button>
+                    <button class="list-group-item list-group-item-action bg-light tabLinks" onclick="openTab(event, 'consent3')">How does consent work</button>
+                    <button class="list-group-item list-group-item-action bg-light tabLinks" onclick="openTab(event, 'consent4')">How to ask for consent</button>
+                    <button class="list-group-item list-group-item-action bg-light tabLinks" onclick="openTab(event, 'consent5')">Some scenarios</button>
+                    <button class="list-group-item list-group-item-action bg-light tabLinks" onclick="openTab(event, 'consent6')">Next step</button>
                 </div>
             </div>
+            
             <!-- Page Content-->
             <div id="page-content-wrapper">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
@@ -46,17 +47,30 @@
                        </ul>
                     </div>
                 </nav>
-                <div class="container-fluid">
-                    <h1 class="mt-4">Simple Sidebar</h1>
-                    <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-                    <p>
-                        Make sure to keep all page content within the
-                        <code>#page-content-wrapper</code>
-                        . The top navbar is optional, and just for demonstration. Just create an element with the
-                        <code>#menu-toggle</code>
-                        ID which will toggle the menu when clicked.
-                    </p>
-                </div>
+                <!-- Tab content -->
+            <div id="consent1" class="tabcontent">
+                <h3>What is consent?</h3>
+                <p>blah</p>
+            </div>
+            <div id="consent2" class="tabcontent">
+                <h3>Who can't give consent?</h3>
+                <p>blah</p>
+            </div>
+            <div id="consent3" class="tabcontent">
+                <h3>How does consent work?</h3>
+                <p>blah</p>
+            </div>
+            <div id="consent4" class="tabcontent">
+                <h3>How to ask for consent?</h3>
+                <p>blah</p>
+            </div>
+            <div id="consent5" class="tabcontent">
+                <h3>Some scenarios</h3>
+                <p>blah</p>
+            </div>
+            <div id="consent6" class="tabcontent">
+                <h3>Next step</h3>
+                <p>blah</p>
             </div>
         </div>
         <!-- Bootstrap core JS-->
@@ -66,3 +80,4 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
+
