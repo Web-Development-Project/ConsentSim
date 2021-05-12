@@ -47,6 +47,37 @@
   box-sizing: border-box;
 }
 
+.quizquestion {
+  border-radius: 25px;
+  border: 2px solid rgba(36,42,66,255);
+  background-color: rgba(214, 238, 247, 1);
+  padding: 20px;
+  margin: 40px
+}
+
+.buttoncontainer { 
+  height: 200px;
+  position: relative;
+}
+
+.buttoncenter {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.submitbutton {
+  margin-bottom: 70px;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid rgba(36,42,66,255);
+  background-color: rgba(214, 238, 247, 1);
+  padding: 15px 32px;
+}
+
 .header_mainpage {
   background-image: url("cheers.jpg");
   background-size: 100%;
