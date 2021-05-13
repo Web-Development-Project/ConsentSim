@@ -72,9 +72,7 @@ document.getElementById("form1").onsubmit=function() {
     document.getElementById("q9ans4").checked == false) q9 = 0;
     else q9 = parseInt(document.querySelector('input[name = "q9"]:checked').value);
     if (document.getElementById("q10ans1").checked == false && 
-    document.getElementById("q10ans2").checked == false && 
-    document.getElementById("q10ans3").checked == false && 
-    document.getElementById("q10ans4").checked == false) q10 = 0;
+    document.getElementById("q10ans3").checked == false) q10 = 0;
     else q10 = parseInt(document.querySelector('input[name = "q10"]:checked').value);
     
     
