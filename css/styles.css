@@ -47,8 +47,33 @@
   box-sizing: border-box;
 }
 
-.text-center {
-    text-align: center;
+.progressbutton {
+  position: fixed;
+  right: 0;
+  padding: 15px 32px;
+  margin-right: 190px;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid rgba(36,42,66,255);
+  background-color: rgba(36,42,66,255);
+  color: rgba(214, 238, 247, 1);
+}
+
+.resetbutton {
+  position: fixed;
+  right: 0;
+  padding: 15px 32px;
+  margin-right: 75px;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid rgba(36,42,66,255);
+  background-color: rgba(36,42,66,255);
+  color: rgba(214, 238, 247, 1);
+}
+
+.quizheading {
+  margin-top: 40px;
+  text-align: center; 
 }
 
 .quizquestion {
