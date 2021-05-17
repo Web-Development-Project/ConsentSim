@@ -28,3 +28,6 @@ pip install -r requirements.txt
 ```
 Run the main Python module <br />
 To use the webpage, go to `http://127.0.0.1:5000/`
+
+## Sources
+Bootstrap: https://startbootstrap.com/template/simple-sidebar
