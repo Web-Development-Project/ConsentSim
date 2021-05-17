@@ -40,7 +40,6 @@ An agile methodology was used in the development of this project, as it was more
    * New versions of the project were prototyped and updated
 4. Release
    * Final version of the webpage released
-Through multiple meetings and prototypes, the project was finally completed. 
 
 ## Launch
 Make sure that you have Python installed
