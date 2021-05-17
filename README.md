@@ -26,5 +26,5 @@ Make sure that you have Python installed
 ```
 pip install -r requirements.txt
 ```
-Run the main Python module
+Run the main Python module <br />
 To use the webpage, go to `http://127.0.0.1:5000/`
