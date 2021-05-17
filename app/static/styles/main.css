@@ -40,6 +40,14 @@
     text-align: center;
 }
 
+.defaultMargin {
+	margin: 50px;
+}
+
+.indexBG {
+	color:rgba(251,245,236,255);
+}
+
 .progressbutton {
   position: fixed;
   right: 0;
