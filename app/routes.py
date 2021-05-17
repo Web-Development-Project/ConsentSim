@@ -56,13 +56,30 @@ def tutorial():
 def quiz():
     information = request.data 
     form = EmptyForm()
+    information = request.data 
+    if request.method == 'GET':
+        return render_template('quiz.html', title='Quiz', form=form)
     if form.validate_on_submit():
         grade = Grade(grade_number=information, from_user=current_user)
         db.session.add(grade)
         db.session.commit()
         flash('Your grade has been saved.')
         return redirect(url_for('quiz'))
-    return render_template('quiz.html', title='Quiz', form=form)
+        try:
+            con = sql.connect('app.db')
+            c =  con.cursor() # cursor
+            # insert data
+            c.execute("INSERT INTO Grade (grade_number, timestamp, user_id) VALUES ('3','2021-05-16 21:27:09.482398', ?)",
+                (current_user))
+            con.commit() # apply changes
+            # go to thanks page
+            return render_template('quiz.html', title='Quiz', form=form)
+        except con.Error as err: # if error
+            # then display the error in 'database_error.html' page
+            error = err
+        finally:
+            con.close() # close the connection
+
 
 @app.route('/feedback', methods=['GET', 'POST'])
 @login_required
