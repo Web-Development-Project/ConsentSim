@@ -118,6 +118,11 @@
 
 .tabcontent {
   display:none;
+  border-radius: 25px;
+  border: 2px solid rgba(36,42,66,255);
+  background-color: rgba(214, 238, 247, 1);
+  padding: 20px;
+  margin: 40px
 }
 
 html {
