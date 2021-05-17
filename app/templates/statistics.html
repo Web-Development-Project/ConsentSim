@@ -1,9 +1,8 @@
 {%extends "base.html"%}
 
 {% block content %}
-<p>the statistics...</p>
-<p>you've attempted the quiz{{current_user.count_grades() } times} </p>
-<p>your worst attempt: {{current_user.min_grade() }} </p>
-<p>your best attempt: {{current_user.max_grade() }} </p>
+<p class="statistic">You've attempted the quiz {{current_user.count_grades() }} times. </p>
+<p class="statistic">Your worst attempt: {{current_user.min_grade() }} </p>
+<p class="statistic">Your best attempt: {{current_user.max_grade() }} </p>
 
 {% endblock %}
