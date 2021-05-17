@@ -1,0 +1,15 @@
+{%extends "base.html"%}
+
+{% block content %}
+<p>the feedback....</p>
+<p>Your most recent grade was {{ result }}/10.</p>
+{% if result.grade_number <= 2 %}
+<p>Terrible! Repeat whole tutorial and try quiz again</p>
+{% elif result.grade_number <= 5 %}
+<p>Bad! Read tutorial and try quiz again</p>
+{% elif result.grade_number <= 8 %}
+<p>Okay! Read tutorial again.</p>
+{% else %}
+<p>Good! You have learnt your lesson :)</p>
+{% endif %}
+{% endblock %}
