@@ -3,13 +3,16 @@
 {% block content %}
 <p>the feedback....</p>
 <p>Your most recent grade was {{ result }}/10.</p>
-{% if result.grade_number <= 2 %}
-<p>Terrible! Repeat whole tutorial and try quiz again</p>
+
+{% if result.grade_number <= 2 %} 
+<p>Uh Oh! Looks like you’re exhibiting a lot of predatory behaviour! Time to rethink your life choices and take a good, hard look at how you perceive other people (or do you call them objects?). Try reading the tutorial again and considering how the other person might feel in your answers. </p>
+
 {% elif result.grade_number <= 5 %}
-<p>Bad! Read tutorial and try quiz again</p>
+<p>Uh Oh! You’re not the worst person out there, but it looks like you’re exhibiting some predatory behaviour. Time to analyse your actions and perhaps read the tutorial again!</p>
+
 {% elif result.grade_number <= 8 %}
-<p>Okay! Read tutorial again.</p>
+<p>Well done! You’re pretty average! It looks like you know to be considerate of others in certain situations, but there’s definitely more to learn! Feel free to read the tutorial again, and always remember to think about how you would feel if the situation was reversed. </p>
 {% else %}
-<p>Good! You have learnt your lesson :)</p>
+<p>Congratulations! You’re pretty considerate! You’ve done very well on the quiz and it looks like you’ve learnt as much as we could teach you about consent. However, the learning never stops! Remember to always be considerate of others and to make sure your partners are comfortable.</p>
 {% endif %}
 {% endblock %}
