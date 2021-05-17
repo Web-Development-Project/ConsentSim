@@ -11,10 +11,12 @@
       <div class="w3-row-padding w3-padding-64 w3-container">
         <div class="w3-content">
           <div class="w3-twothird">
+               <!--if user is not logged in, display general information-->
             {% if current_user.is_anonymous %}
             <h1 class="w3-padding-32">Why should you use our informative tutorial?</h1>
             <h5 class="w3-padding-32">Schools are notoriously bad at teaching kids about consent. Just look at the milkshake video that the government spent $3.8 million on. Our course will not only tell you what consent actually is, but will provide practical advice on how to ask for consent, and how to know when you've got it and are able to proceed.</h5>
-            {% else %}
+            <!--else welcome specific user-->
+              {% else %}
             <h1 class="w3-padding-32">Welcome back, {{ current_user.username }}!</h1>
             {% endif %}
           </div>
