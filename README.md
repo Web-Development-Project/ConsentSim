@@ -19,8 +19,6 @@ Our website is designed to teach you about consent and its many aspects - includ
 * Statistics
   * Statistics such as number of times test was taken, average score, max score, and min score will be displayed
 
-## Design and Development
-
 ## Launch
 Make sure that you have Python installed
 ```
