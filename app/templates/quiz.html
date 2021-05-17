@@ -4,10 +4,12 @@
 
 <form id="form1">
     <div class="container-fluid">
+        <!--button to uncheck all answers-->
         <div>
         <button class="resetbutton" onClick="reset()">Reset</button>
         <h1 class="quizheading">Quiz</h1>
         </div>
+        <!--quiz questions-->
         <div class="quizquestion">
             <p>1. You have a friend that you've had a crush on for a while. At a party, she drinks, and you can tell she is intoxicated. She clearly cannot remember the events of even five minutes ago. She starts coming on to you, and trying to kiss you. What do you do?</p>
             <input type="radio" id="q1ans1" name="q1" value="0" class="radiocheck">
@@ -125,19 +127,20 @@
             
         </div>
 
-
+<!--submit button to see score-->
     <div class="buttoncontainer">
         <div class="buttoncenter">
             <input class="submitbutton" type="submit" value="Submit">
         </div>
     </div>
 
-        
+        <!--quiz overall score--> 
     </div>
     <p> Your grade is <span id="quizGrade">___</span>/10!</p>
     <p>Now, you can either reset to try again, or save your grade to the database.</p>
     <button class="resetbutton" onClick="reset()">Reset</button>
     
+    <!--submit score to database-->
     </form>
     <form action="" method="post">
         {{ form.hidden_tag() }}
