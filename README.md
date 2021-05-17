@@ -1,14 +1,14 @@
 # ConsentSim
 
 ## Overview
-Our website is designed to teach you about consent and its many aspects - including how to identify it, some ways to ask for it, and how to proceed. This is a very important topic, as it will apply to everyone at some stage in their life; not only in sexual contexts but also in general friendships and relationships with other people. The goal of this website is to explain everything in a straight-forward and clear way so that there is little confusion on the subject for all users. We hope that everyone who visits our website learns something that they can carry into their real life! 
+Our website is designed to teach you about consent and its many aspects - including how to identify it, some ways to ask for it and how to proceed. This is a very important topic, as it will apply to everyone at some stage in their life; not only in sexual contexts but also in general friendships and relationships with other people. The goal of this website is to explain everything in a straight-forward and clear way so that there is little confusion on the subject for all users. We hope that everyone who visits our website learns something that they can carry into their real life! 
 
 ## Contents
 * Home
   * A welcome page for users
   * Guides users to login/register
 * Account
-  * Where users can login, register, or sign out
+  * Where users can login or register
 * Tutorial
   * A guide to understanding the essentials of consent
 * Quiz
