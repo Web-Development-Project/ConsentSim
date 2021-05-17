@@ -1,7 +1,7 @@
 {%extends "base.html"%}
 
 {% block content %}
-<p class="quizquestion">Your most recent grade was {{ result }}/10.</p>
+<p class="yourgrade">Your most recent grade was {{ result }}/10.</p>
 
 {% if result.grade_number <= 2 %} 
 <p class="quizquestion">Uh Oh! Looks like you’re exhibiting a lot of predatory behaviour! Time to rethink your life choices and take a good, hard look at how you perceive other people (or do you call them objects?). Try reading the tutorial again and considering how the other person might feel in your answers. </p>
