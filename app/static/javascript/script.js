@@ -60,6 +60,7 @@ function calculateResult(){
   return q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8 + q9 + q10;
 }
 
+
 function reset (){
       $('.radiocheck').each(function(){
           $(this).prop('checked', unchecked);
@@ -67,9 +68,13 @@ function reset (){
 return false;
 }
 
-const URL = '/get-coordinates'
-const xhr = new XMLHttpRequest();
-numberpass = calculateResult();
-sender = JSON.stringify(numberpass);
-xhr.open('POST', URL);
-xhr.send(sender);
+function submit(){
+    const URL = '/get-coordinates'
+	const xhr = new XMLHttpRequest();
+	numberpass = calculateResult();
+	sender = JSON.stringify(numberpass);
+	xhr.open('POST', URL);
+	xhr.send(sender);
+}
+
+
