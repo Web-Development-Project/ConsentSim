@@ -48,7 +48,7 @@ Make sure that you have Python installed
 pip install -r requirements.txt
 ```
 Run the main Python module <br />
-To use the webpage, go to `http://127.0.0.1:5000/`
+To use the webpage, visit `http://127.0.0.1:5000/`
 
 ## Sources
 Bootstrap: https://startbootstrap.com/template/simple-sidebar
