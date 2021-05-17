@@ -1,5 +1,6 @@
 {%extends "base.html"%}
 
+<!--user statistics from quiz-->
 {% block content %}
 <p class="statistic">You've attempted the quiz {{current_user.count_grades() }} times. </p>
 <p class="statistic">Your worst attempt: {{current_user.min_grade() }} </p>
