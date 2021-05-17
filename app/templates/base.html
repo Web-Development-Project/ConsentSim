@@ -1,8 +1,10 @@
+<!--base template to style pages-->
 <!DOCTYPE html>
 <html>
     <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!--temporary title that will be changed on each page-->
       {% if title %}
       <title>{{ title }} - Consent Training</title>
       {% else %}
@@ -13,14 +15,17 @@
     </head>
     <body>
         <div id="page-content-wrapper">
+            <!--code for navigation bar linking to other pages -->
           <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item"><a class="nav-link" href="/index">Home</a></li>
+                  <!--if user is not logged in, take them to the login page and restrict access to quiz and tutorial-->
                 {% if current_user.is_anonymous %}
                 <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
                 <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+                  <!--else show everything-->
                 {% else %}
                 <li class="nav-item"><a class="nav-link" href="/tutorial">Tutorial</a></li>
                 <li class="nav-item"><a class="nav-link" href="/quiz">Quiz</a></li>
@@ -31,7 +36,7 @@
                 </ul>
               </div>
             </nav>
-        
+        <!--code for pages needing flashed messages, eg. register, forgot password-->
                 {% with messages = get_flashed_messages() %}
                 {% if messages %}
                 <ul>
