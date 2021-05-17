@@ -5,6 +5,8 @@
         <h1>Register</h1>
         <form action="" method="post">
             {{ form.hidden_tag() }}
+            
+            <!--if username gives error, change colour to red-->
             <p>
                 <br>
                 {{ form.username(size=32, placeholder="Username") }}<br>
@@ -12,26 +14,35 @@
                 <span style="color: red;">[{{ error }}]</span>
                 {% endfor %}
             </p>
+            
+            <!--if emails give an error, change colour to red-->
             <p>
                 {{ form.email(size=32, placeholder="Email") }}<br>
                 {% for error in form.email.errors %}
                 <span style="color: red;">[{{ error }}]</span>
                 {% endfor %}
             </p>
+            
+            <!--if password gives error change colour to red-->
             <p>
                 {{ form.password(size=32, placeholder="Password") }}<br>
                 {% for error in form.password.errors %}
                 <span style="color: red;">[{{ error }}]</span>
                 {% endfor %}
             </p>
+            
+            <!--if password confirmation gives error change colour to red-->
             <p>
                 {{ form.password2(size=32, placeholder="Password") }}<br>
                 {% for error in form.password2.errors %}
                 <span style="color: red;">[{{ error }}]</span>
                 {% endfor %}
             </p>
+            
             <p>{{ form.submit() }}</p>
         </form>
+        
+        <!--button for login if user already has an account-->
         <p>Already have an account? <a href="{{ url_for('login') }}">Click to Login!</a></p>
     </div>
 {% endblock %}
