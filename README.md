@@ -22,6 +22,9 @@ Our website is designed to teach you about consent and its many aspects - includ
 ## Design and Development
 
 ## Launch
+Make sure that you have Python installed
 ```
-hello
+pip install -r requirements.txt
 ```
+Run the main Python module
+To use the webpage, go to `http://127.0.0.1:5000/`
