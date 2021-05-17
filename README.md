@@ -25,7 +25,22 @@ Many different aspects were considered when initially trying to come up with a d
 The design of the website was intended to be gender-neutral so that it is applicable and relatable to anyone who wishes to use it. This is displayed through the language used, colours, and general appearance. 
 
 ### Development
-An agile methodology was used in the development of this project, as it was more suited to both the website itself and the collaborative nature of its development. This way, team members could work on different parts independently then come together at various stages to fit everything together. Through multiple meetings and prototypes, the project was finally completed. 
+An agile methodology was used in the development of this project, as it was more suited to both the website itself and the collaborative nature of its development. This way, team members could work on different parts independently then come together at various stages to fit everything together 
+1. Planning was done so that team members were all on the same page and knew what the objectives of the webpage were. This included:
+ * Goals and objectives
+ * Time scheduling
+ * Division of workload
+2. Ideas and potential designs of the project
+ * Initial sketches and layout of the page
+ * Potential content
+ * Including the coding/functionality of the page to compliment the content and message
+3. Prototying and construction
+ * Team members worked on allocated parts of the webpage
+ * At periodic time intervals the team had meetings to judge progress, reallocate work, and implement new ideas
+ * New versions of the project were prototyped and updated
+4. Release
+ * Final version of the webpage released
+Through multiple meetings and prototypes, the project was finally completed. 
 
 ## Launch
 Make sure that you have Python installed
