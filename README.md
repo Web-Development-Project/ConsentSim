@@ -19,6 +19,14 @@ Our website is designed to teach you about consent and its many aspects - includ
 * Statistics
   * Statistics such as number of times test was taken, average score, max score, and min score will be displayed
 
+## Design and Development
+### Design
+Many different aspects were considered when initially trying to come up with a design for the website. The website is intended for teenagers and older, so based on that and the important content matter we wanted to make the website serious, yet not boring. 
+The design of the website was intended to be gender-neutral so that it is applicable and relatable to anyone who wishes to use it. This is displayed through the language used, colours, and general appearance. 
+
+### Development
+An agile methodology was used in the development of this project, as it was more suited to both the website itself and the collaborative nature of its development. This way, team members could work on different parts independently then come together at various stages to fit everything together. Through multiple meetings and prototypes, the project was finally completed. 
+
 ## Launch
 Make sure that you have Python installed
 ```
