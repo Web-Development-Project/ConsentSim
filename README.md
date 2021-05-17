@@ -38,6 +38,7 @@ An agile methodology was used in the development of this project, as it was more
    * Team members worked on allocated parts of the webpage
    * At periodic time intervals the team had meetings to judge progress, reallocate work, and implement new ideas
    * New versions of the project were prototyped and updated
+   * Attempts to validate pages
 4. Release
    * Final version of the webpage released
 
